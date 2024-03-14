@@ -77,7 +77,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <title>Vibe</title>
+                <title>Music</title>
                 <link rel="manifest" href="/manifest.json" />
                 <meta name="theme-color" content="#21142a" />
                 <meta name="description" content="Vibe" />
