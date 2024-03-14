@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Cupid - twin ver.",
+        "cover": "/cover8.png",
+        "src": "https://songszilla.net/siteuploads/files/sfd7/3257/Cupid i Gave A Second Chance Song Download Mp3(SongsZilla.Net).mp3",
+        "artist": "FIFTY FIFTY",
+        "playlist": "playlist1",
+        "_id": "1"
+    },
+    {
+        "name": "landslide",
+        "cover": "/cover6.jpg",
+        "src": "https://www.trendmusics.com/wp-content/uploads/2022/06/Landslide_-_Oh_Wonder_trendmusics.com.mp3",
+        "artist": "Oh wonder",
+        "playlist": "playlist1",
+        "_id": "2"
+    },
+    {
+        "name": "starboy",
+        "cover": "/cover2.jpg",
+        "src": "/song.mp3",
+        "artist": "The Weekend",
+        "playlist": "playlist1",
+        "_id": "3"
+    },
+    {
+        "name": "this is what falling in love feels",
+        "cover": "/cover4.jpg",
+        "src": "/song.mp3",
+        "artist": "JVKE",
+        "playlist": "playlist1",
+        "_id": "4"
+    },
+    {
+        "name": "untill i found you",
+        "cover": "/cover5.jpeg",
+        "src": "https://pagalworlld.com/files/download/id/3909",
+        "artist": "Stephan Sanchez",
+        "playlist": "playlist1",
+        "_id": "5"
+    },
+    {
+        "name": "people",
+        "cover": "/cover3.jpeg",
+        "src": "https://djmaza.live/siteuploads/files/sfd28/13695/People - Libianca-(DJMaza).mp3",
+        "artist": "libianca",
+        "playlist": "playlist1",
+        "_id": "6"
+    },
+    {
+        "name": "Dil nu",
+        "cover": "/cover7.jpg",
+        "src": "https://cdnsongs.com/dren/music/data/Punjabi/202210/Two_Hearts_Never_Break_The_Same_EP/320/Dil_Nu.mp3/Dil Nu.mp3",
+        "artist": "AP Dhillon",
+        "playlist": "playlist1",
+        "_id": "7"
+    },
+    {
+        "name": "Golden Hour",
+        "cover": "/cover9.jpg",
+        "src": "https://flexyokayfile.xyz/files/2022/09/JVKE_-_golden_hour_FlexyOkay.com.mp3",
+        "artist": "JVKE",
+        "playlist": "playlist1",
+        "_id": "8"
+    }
+]

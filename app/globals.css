@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  /* .sidenav{
+    @apply w-20 hover:w-64 transition-all duration-500 ease-in-out overflow-hidden;
+  }
+  .sidenav h3{
+    @apply opacity-0 translate-y-1 transition-all duration-100 ease-in-out absolute translate-x-12 font-bold;
+  }
+  .sidenav:hover h3{
+    @apply opacity-60 translate-y-0;
+  }
+  .sidenav:hover a{
+    @apply justify-start;
+  } */
+  .bg {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), transparent);
+  }
+}
+
+@layer utilities {}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  backdrop-filter: blur(15px) saturate(200%);
+  -webkit-backdrop-filter: blur(15px) saturate(200%);
+  background-color: rgba(var(--foreground-color-rgb), 0.75);
+  border-bottom: 1px solid rgba(var(--border-color-rgb), 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf30;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  font-family: 'Golos Text', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* background: linear-gradient(109.6deg, rgb(12, 17, 28) 11.2%, #171c24 91.1%) */
+  background-image: url(/bg.png);
+  color: #ffffff;
+}
+
+
+:root {
+  --percent: 0%;
+  --volume-percent: 0%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: 15, 15, 15;
+    --foreground-color: 40, 40, 40;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}
+
+.logo {
+  font-family: 'Leckerli One', cursive;
+}
+
+.album {
+  overflow: hidden;
+}
+
+.play-btn {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.album:hover .play-btn {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.input-slider {
+  position: relative !important;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  height: 6px;
+  border-radius: 6px;
+  color: #9DA5D0;
+}
+
+.seeker::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #9DA5D0 var(--percent), #444444 var(--percent));
+}
+
+.volume::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #9DA5D0 var(--volume-percent), #1a1a1a var(--volume-percent)) !important;
+}
+
+.input-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 5px;
+}
+
+.input-slider::-webkit-slider-thumb {
+  position: relative;
+  -webkit-appearance: none;
+  box-sizing: content-box;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  margin: -7px 0 0 0;
+  transform-origin: top;
+  transform: translateY(15%);
+}
+
+/* .volume-controller{
+  background: none;
+  transition: all 0.1s ease-in;
+} */
+
+.volume-controller{
+  background: rgba(157,165,208,0.2);
+}
+
+/* .volume-controller .volume{
+  width: 0;
+  opacity: 0;
+  transition: all 0.1s ease-in;
+} */
+.volume-controller .volume{
+  width: 5rem;
+  opacity: 1;
+  display: block;
+  margin-right: 0.7rem;
+}
+
+.custom-grid-1 {
+  display: grid;
+  grid-template-columns: 22.1875% 22.1875% 22.1875% 22.1875%;
+  align-items: center;
+  gap: 3.75%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 17% 17% 17% 17% 17%;
+  gap: 3.75%;
+  align-items: center;
+  grid-template-rows: auto 0px;
+  overflow-y: visible;
+  height: 90%;
+  overflow-x: scroll;
+}
+
+.custom-grid-1 .album:nth-child(n + 5) {
+  display: none;
+}
+
+.custom-grid .album:nth-child(n + 6) {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .custom-grid {
+    grid-template-columns: 30.8% 30.8% 30.8% 30.8% 30.8%;
+  }
+
+  .custom-grid-1 {
+    grid-template-columns: 48.1% 48.1% 48.1% 48.1%;
+  }
+}

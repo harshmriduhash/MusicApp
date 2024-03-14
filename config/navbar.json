@@ -1,0 +1,30 @@
+[
+    {
+        "text": "Home",
+        "icon": "faHouse",
+        "image": null,
+        "url": "/dashboard",
+        "onMobile": true
+    },
+    {
+        "text": "Playlist",
+        "icon": "faMusic",
+        "image": null,
+        "url": "/playlist",
+        "onMobile": true
+    },
+    {
+        "text": "Liked",
+        "icon": "faHeart",
+        "image": null,
+        "url": "/liked",
+        "onMobile": true
+    },
+    {
+        "text": "Profile",
+        "icon": null,
+        "image": "https://i.imgur.com/4KeKvtH.png",
+        "url": "/profile",
+        "onMobile": false
+    }
+]
